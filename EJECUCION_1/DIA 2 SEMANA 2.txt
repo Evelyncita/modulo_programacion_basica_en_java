@@ -1,0 +1,177 @@
+Clase día 2 - Semana 2
+
+Integrantes: Leonardo Rodenas, Ignacio Cavallo, Natalia Gatica, Evelyn Ibarra, Francisca Díaz y Renzo Valencia.
+
+E-mail: leo.rodenas.e@gmail.com, ignaciomcavallo@gmail.com, natalia-gatica@hotmail.com, francisca.diaz.briones@gmail.com, ibarrarojas.evelyn@gmail.com 
+
+Ejercicio grupal 1: 
+
+Realizar un algoritmo en Pseudocódigo que permita sumar dos números.
+Realizar un algoritmo en Pseudocódigo que permita calcular el promedio de 3 notas.
+Realizar un algoritmo en Pseudocódigo que permita calcular el cuadrado de un numero.
+Para cada ejercicio determinar las variables y/o constantes involucradas.
+
+Variables: 
+
+Números = N1, N2 → Variable
+Sumar = N1 + N2 → Variable
+Resultado (N1 + N2) = R → Variable
+
+INICIO
+	"Escribir dos números (N1, N2)"
+	"Leer dos números (N1, N2)"
+	"Sumar dos números (N1 + N2)"
+	"Resultado función sumar (N1 + N2)"
+	"Escribir sumar dos números (N1 + N2)"
+	"Print "Su resultado es R""
+FIN
+__________________________________________________
+
+Variables: 
+
+Notas = Nota1, Nota2, Nota3 → Variable
+Numero de notas = 3 → Constante
+Sumar Notas = Nota1 + Nota2 + Nota3 → Variable
+Resultado sumar Notas = SM → Variable
+Dividir = SM/3 → Variable
+Resultado (SM/3) = Promedio → Variable	
+
+INICIO
+	"Escribir tres Notas (Nota1, Nota2, Nota3)"
+	"Leer tres Notas (Nota1, Nota2, Nota3)"
+	"Sumar tres Notas (Nota1 + Nota2 + Nota3)"
+	"Resultado función Sumar Notas (SM)"
+	"Dividir SM/Numero de notas"
+	"Leer SM/Numero de notas"
+	"Print "Su resultado es SM/Numero de notas"
+FIN
+__________________________________________________
+
+
+
+Variables: 
+
+Numero = A → Variable
+Resultado = A^2 → Variable
+
+INICIO
+	"Escribir Numero A"
+	"Leer Numero A"
+
+	"Resultado A^2"
+	"Leer A^2"
+	"Print "Su resultado es A^2""
+FIN
+
+
+
+____________________________________________________________________
+Realizar un algoritmo en pseudocódigo para resolver el siguiente problema.
+Suponga que un individuo desea invertir un capital en un banco y desea saber cuanto dinero ganara después de un mes si el banco le paga a razón de 2% mensual.
+
+En cada ejercicio determinar las variables y/o constantes involucradas
+
+Variables: 
+
+Individuo persona X (CONSTANTE) =X
+capital (variable)  = $
+Porcentaje abono (variable)= 2 %
+
+INICIO
+
+"Escribir dinero ahorrado ($)”
+“leer dinero ahorrado ($)”
+“multiplicar dinero ahorrado ($) *2”
+Mostrar resultado 
+“Dividir resultado /100)”
+“Leer resultado”
+Print su resultado es 
+
+
+___________________________________________________________________
+
+1.- Realiza un algoritmo en pseudocódigo que pida ingresar el modelo y la marca de un vehiculo y me muestre por pantalla los datos ingresados.
+
+2.- Realizar un algoritmo en pseudocódigo que permita calcular el porcentaje solicitado de un numero ingresado.
+
+3.- Realizar un algoritmo en Pseudocódigo para resolver el siguiente problema:
+Un vendedor recibe un sueldo base mas de un 10% de comision de sus ventas, el vendedor desea saber cuanto dinero obtendrá por concepto de comisiones por tres ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones
+1 Realiza un algoritmo en pseudocodigo que pida ingresar el modelo y la marca de un vehiculo y me muestre por pantalla los datos ingresados.
+Crear variable modelo
+Crear variable marca
+Ingresar modelo
+Ingresar marca
+Imprimir variable modelo y variable marca
+Variables Tipo de carrocería, Año fabricación, marca, modelo, motor
+
+2 Realizar un algoritmo en pseudocódigo que permita calcular el porcentaje solicitado de un número ingresado.
+
+
+Inicio, escribir: "número entero" ; Escribir: "porcentaje"
+N; número ingresado 
+p; porcentaje solicitado
+n = 0
+p = 0
+resultado = (n*p)/100
+print (resultado)
+
+3 Realizar un algoritmo en Pseudocodigo para resolver el siguiente problema:
+Un vendedor recibe un sueldo base mas de un 10% de comision de sus ventas, el vendedor desea saber cuanto dinero obtendra por concepto de comisiones por tres ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones
+Variables
+comision =  0.1
+sueldoTotal = 0
+valorVenta = 0
+Constante
+numeroVentas = 3
+sueldoBase= 0
+
+Escribir : “El ”+ V% + “% de” + VN + “es” + R
+
+fun calcular_sueldo(sueldoBase, comision, sueldoTotal, numerVentas):
+               sueldoTotal  = sueldoBase + (valorVenta * numeroVentas * comsion)
+               print(“ Su sueldo total es:” sueldoTotal”)
+
+comision = (venta1 + venta2 + venta3) * .10
+Intercambio de valores
+Realizar un algoritmo que intercambie el valor de dos variables
+Por ejemplo:  aL INICIO DEL PROBLEMAS LOS VALORES DE LAS VARIABLES SON a=2 y B=3
+Luego al final del algoritmo A=3 y B=2
+
+
+“Ingresar a = valor 2
+Cambiar a= valor 3
+Ingresar B =valor 3
+Cambiar B= valor 2
+
+Introducir 1er numero
+Leer 1er numero
+
+Introducir 2do numero
+Leer 2do numero
+
+nA = n1
+n1 = n2
+n2 = na
+
+Print: "el nuevo valor del 1er numero es: " + n1
+Print: "el nuevo valor del 2do numero es: " + n2
+
+
+_____________________________________________________________-
+
+auxiliar 
+a=2
+b= 3
+a=(A+B)-A
+b=(b+a)-B
+
+A = A +(B-A)
+b = b+ (A-B)
+
+a=3
+b=2
+a=a+b
+b=a-b
+a=a-b
+a
+b
