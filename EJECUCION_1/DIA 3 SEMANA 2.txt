@@ -1,0 +1,120 @@
+    1. Determinar si la suma de dos números ingresados es positiva, negativa o cero.
+
+inicio
+
+Variables: n1, n2
+Si (n1+n2)> 0:
+               Print("positivo")
+Si no también (n1+n2)<0:
+               Print(“negativo”)
+Sino:
+               Print(“es cero”)
+fin si
+-------------
+
+2. Indicar si un número es divisible por 2 y por 5 al mismo tiempo.
+
+variable: x
+si (X%10==0)
+   escribir"el numero es divisible por 2 ^ 5"
+sino 
+   escribir"no es divisible por 2 ^ 5" 
+fin si
+--------------
+
+3. Determinar cuál es el mayor de 3 números ingresados.
+
+inicio
+
+variables: n1, n2, n3
+// Comprar n1 y n2
+si (n1>n2)
+  Si (n1 > n3)
+     Print (n1)
+   si no
+     print (n3)
+si no
+// Comparar n2 y n3
+si (n2>n3)
+   print (n2)
+sino
+   print (n3)
+fin si
+----------------
+
+- ¿Qué pasa si son los 3 números negativos?
+
+Def num1, num2,num3
+inicio
+    var int num1, num2,num3
+    escribir "ingrese un numero"
+    num1= leer
+    escribir "ingrese otro numero"
+    num2= leer
+    escribir "ingrese otro numero"
+    num3= leer
+
+    var mayor=0   <---
+
+    si(num1 >= mayor) entonces
+        mayor =num1
+    si(num2 >= mayor) entonces
+        mayor =num2
+    si(num3 >= mayor) entonces
+        mayor =num3   
+    
+    escribir "el numero mayor es:" + mayor
+fin 
+
+------ Ignacio  ------
+n1 = 1000
+n2= 250
+n3  = 400
+
+
+na = n1
+if (na<n2):
+    na = n2
+    if na<n3:
+        na=n3
+else:
+    if na < n3:
+        na = n3
+print(na)
+
+Var
+A,b,n, suma
+Entrada
+Escribir “ingresa valor a”
+Leer a
+Escribir “ingresa valor b”
+Leer b
+A+b=n
+leer n
+si n == 0 Entonces
+Escribir «El numero «,n,» es neutro»
+SiNo
+si n > 0 Entonces
+Escribir «El número «,n,» es positivo»
+SiNo
+Escribir «El numero «,n,» es negativo»
+FinSi
+FinSi 
+
+Nosotros tenemos lo mismo Num1 = a
+Num2 = b
+Num3 = c
+
+FIN
+Escribe Num1 (a)
+Leer Num1 (a)
+Escribe Num2 (b)
+Leer Num2 (b)
+Escribe Num3 (c)
+Leer Num3 (c)
+SI (a>b && a>c), print: +a "es el numero mayor de los tres números"
+SI NO, SI (b>a && b>c), : +b "es el numero mayor de los tres números"
+SI NO, print: "c es el mayor de los tres números"
+FIN SI
+FIN SI
+FIN 
