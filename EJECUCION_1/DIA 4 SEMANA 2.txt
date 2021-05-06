@@ -1,0 +1,254 @@
+
+Realizar algoritmo en pseudocodigo que resuelva los siguientes problemas utilizando las 3 estructuras iterativas que hemos visto (mientras - hacer mientras -para):
+
+Se ingresa una cantidad de numero, calcular la suma de todos los numeros pares ingresados y la multiplicacion de todos los impares ingresados, ademas determinar si de los numeros ingresados fueron mas pares o impares (la cantidad de numeros que se ingresan deben ser determinada por el usuario)
+
+Determinar el mayor de N numeros ingresados por el usuario 
+
+Evidencia día 4 - Semana 2
+
+Integrantes: Leonardo Rodenas Escobar, Carolina Claret, Evelyn Ibarra, Francisco Donoso, Ignacio Cavallo e Isabel Salazar
+E-mail: ignaciomcavallo@gmail.com, ibarrarojas.evelyn@gmail.com, fco.andriev@gmail.com, issalazar.m@gmail.com y cclaretv@gmail.com
+
+Ejercicio 1: Realizar algoritmo en pseudocódigo que resuelva los siguientes problemas utilizando las tres estructuras iterativas que hemos visto (mientra - hacer mientras - para): 
+
+- Mostar por pantalla los números de 1 al 100 y del 100 al 1
+
+Variables:
+
+I = 1
+J = 100
+
+* CON MIENTRAS:
+
+INICIO
+	ESCRIBIR I
+	LEER I
+	MIENTRAS (I<=100) HACER
+	ESCRIBIR I
+	I = I+1
+	FIN MIENTRAS
+FIN 
+
+INICIO
+	ESCRIBIR J
+	LEER J
+	MIENTRAS (J<=1) HACER
+	ESCRIBIR J 
+	J = J-1
+	FIN MIENTRAS
+FIN 
+
+- Sumar solo los números pares ingresados por un usuario (la cantidad de números que se ingresa debe ser determinada por el usuario).
+
+Variables:
+
+numero
+cantidad_numero
+total
+
+INICIO
+Escribir  “Cuantos números desea sumar?” = cantidad_numero
+Leer cantidad_numero
+Mientras cantidad_numero >= 0
+Si (numero%2 ==0):
+Total += numero
+cantidad_numero =-1
+
+
+- Sumar los números pares e impares ingresados por un usuario y contar la cantidad de números pares e impares (la cantidad de números que se ingresan deben ser determinada por el usuario).
+
+suma separados
+
+inicio
+
+definir res=si. sumapar, sumaimpar, contarpar, contarimpar
+
+mientras (res == si)
+
+escribir "ingrese numero"
+
+n1 = leer numero
+
+si (n1%2 == 0)
+        sumapar = sumapar +n1
+        contarpar++
+sino        
+        sumaimpar = sumaimpar +n1
+        contarimpar++
+fin si
+
+escribir "desea ingresar nuevo numero? si/no"
+
+res = leer respuesta
+
+fin mientras
+
+escribir "los numero pares ingresados son"
+
+escribir "los numero pares ingresados son" +contarpar "y la suma de pares es" +sumapar
+
+escribir "los numero impares ingresados son" +contarimpar "y la suma de impares es" +sumaimpar
+
+fin 
+
+suma juntos
+
+inicio
+
+definir res=si. suma, contarpar, contarimpar
+
+mientras (res == si)
+
+escribir "ingrese numero"
+
+n1 = leer numero
+
+suma=suma+n1
+
+si (n1%2 == 0)
+        contarpar++
+sino        
+       contarimpar++
+fin si
+
+escribir "desea ingresar nuevo numero? si/no"
+
+res = leer respuesta
+
+fin mientras
+
+fin 
+
+
+hacer-mientras
+
+inicio
+
+definir res=si. suma, contarpar, contarimpar
+
+escribir "ingrese numero"
+
+n1 = leer numero
+
+suma=suma+n1
+
+si (n1%2 == 0)
+        contarpar++
+sino        
+       contarimpar++
+fin si
+
+escribir "desea ingresar nuevo numero? si/no"
+
+res = leer respuesta
+
+hasta (res == no)
+
+fin 
+
+
+_____________________________________________________________________
+
+
+Realizar algoritmo en pseudocódigo que resuelva los siguientes problemas utilizando las 3 estructuras iterativas que hemos visto (mientras - hacer mientras -para):
+
+numero
+calcular 
+suma pares
+multiplicacion impares
+det  si hay mas pares o impares
+
+---------- 1 --------
+numerosActuales = 0
+sumaPares = 0
+mplcaImpares = 1 
+cantPares = 0
+cantImpares = 0
+
+---------PARA --------
+canPares= 0    
+sumaPares = 0
+canImpares = 0
+mulImpares =1
+inicio para
+para i =1, i++, i=numerosTotales
+	si (i%2==0):
+    	sumaPares += i
+    	cantPares ++1
+	sino :
+    	mulImpares *= i
+    	cantImpares ++
+        
+Si cantPares> cantImpares:
+        	mayorNumero = cantPares
+sino:
+mayorNumero = CantImpares
+        
+
+fin para
+    
+-------MIENTRAS------
+
+
+inicial = 1 
+suma = 0
+producto = 1
+int numero = 0
+
+Escribir"introduce el numero"
+Leer el numero
+
+ mientras (inicial < numero)
+   si(inicial%2==0)
+	suma = suma + inicial
+   sino
+ 	producto = producto * inicial;
+   inicial++
+  fin mientras
+
+escribir ("La suma de los numero pares es: "+suma)
+escribir ("El producto de los numeros impares es: "+producto)
+
+
+
+Se ingresa una cantidad de numero, calcular la suma de todos los números pares ingresados y la multiplicación de todos los impares ingresados, ademas determinar si de los numeros ingresados fueron mas pares o impares (la cantidad de números que se ingresan deben ser determinada por el usuario)
+
+Determinar el mayor de N números ingresados por el usuario 
+
+------- 2 -------
+
+mayor = 0
+escribir "ingrese cantidad de numeros a ingresar"
+leer cantNumeros
+escribir "ingrese " + cantNumeros " numeros"
+leer numeros
+
+para: i = 0 hasta cantNumeros
+	si ( numeros[i] > mayor )
+    	mayor = numeros[i]
+fin para
+
+escribir "el mayor numero es " + mayor
+
+
+________________________________________________________________
+Escribe Cantidad_Num
+Leer Cantidad_Num
+Mientras (I <=Cantidad_Num)
+Escribe Numero
+Leer Numero
+SI (Numero%2 ==0), HACER
+Escribe Suma_Numpar = Suma_Numpar+Numero
+Cuentapar++
+SI NO, Escribe Mul_Numimpar = Mul_Numimpar*Numero
+Cuenta_impar++
+FIN SI
+I++
+FIN MIENTRAS
+Si Cuenta_par > Cuenta_impar
+Escribe Cuenta_par
+Print: "se ingresaron mas números par"
+SI NO, Cuenta_impar
+Print: "se ingresaron mas números impar"
+FIN
