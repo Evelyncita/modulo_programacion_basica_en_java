@@ -1,0 +1,246 @@
+eJEMPLO cAROLINA cLARET
+Algoritmo sin_titulo
+escribir"ingrese numero de cita"
+leer cita
+si cita<=3 entonces
+escribir "el paciente debe pagar 200000"
+lleva_pagado=cita*200000
+escribir "el paciente ha pagado hasta ahora ", lleva_pagado
+SiNo
+
+si cita >3 y cita <=5 entonces
+escribir "el paciente debe pagar 150000"
+lleva_pagado=cita*150000
+escribir "el paciente ha pagado hasta ahora ", lleva_pagado
+SiNo
+
+si cita >5 y cita <=8 entonces
+escribir "el paciente debe pagar 100000"
+lleva_pagado=cita*100000
+escribir "el paciente ha pagado hasta ahora ", lleva_pagado
+SiNo
+
+si cita > 8 entonces
+escribir "el paciente debe pagar 50000 "
+lleva_pagado=cita*50000
+escribir "el paciente ha pagado hasta ahora ", lleva_pagado
+fin si
+fin si
+fin si
+fin si
+
+Ejemplo Ignacio
+Algoritmo teMata_IgnacioCavallo
+leer numeroCita
+leer costoCita
+leer costoTotal
+segun numeroCita hacer
+numeroCita>=3:
+costoCita = numeroCita * 200
+costoTotal = costoCita
+
+numeroCita<=5:
+costoCita = numeroCita * 150
+costoTotal = costoCita + 600
+
+numeroCita<=8:
+costoCita = numeroCita * 100
+costoTotal = costoCita + 1050
+
+numeroCita>=10:
+costoCita = numeroCita * 100
+costoTotal = costoCita + 1250
+FinSegun
+
+Imprimir "El valor de la cita es " costoCita
+Imprimir " El valor total de las citas es" costoTotal
+
+
+FinAlgoritmo
+
+.................................
+eJEMPLO  YAYSOM
+Algoritmo dr_t_mata_lozano
+Imprimir "ingrese la cita actual"
+Leer citaActual
+Segun (citaActual)
+citaActual<=3 Hacer:
+valorFinal=(citaActual-1*20000)
+Imprimir "el valor de esta cita de 20000 y el costo total del tratamiento ha sido $" valorFinal
+citaActual<=5 Hacer:
+valorFinal=((citaActual-4)*15000)+60000
+Imprimir "el valor de esta cita de $15000 y el costo total del tratamiento ha sido $" valorFinal
+citaActual<=8 Hacer:
+valorFinal=((citaActual-6)*10000)+90000
+Imprimir "el valor de esta cita de $10000 y el costo total del tratamiento ha sido $" valorFinal
+De Otro Modo:
+valorFinal=((citaActual-9)*5000)+110000
+Imprimir "el valor de esta cita de $5000 y el costo total del tratamiento ha sido $" valorFinal
+FinSegun
+FinAlgoritmo
+
+largo_tramo_A = 3
+largo_tramo_B = 2
+largo_tramo_C = 3
+// largo_tramo_D = sin límite.
+
+tarifa_tramo_A = 20000
+tarifa_tramo_B = 15000
+tarifa_tramo_C = 10000
+tarifa_tramo_D = 5000
+
+escribir "Ingrese el número de la última cita :"
+leer nro_cita
+
+si nro_cita <= largo_tramo_A
+costo_ultima_cita = tarifa_tramo_A  
+citas_en_tramo_A = nro_cita
+si no
+  citas_en_tramo_A = largo_tramo_A
+  si nro_cita <= largo_tramo_A + largo_tramo_B
+costo_ultima_cita = tarifa_tramo_B
+    citas_en_tramo_B = nro_cita - largo_tramo_A
+  si no
+    citas_en_tramo_B = largo_tramo_B
+    si nro_cita <= largo_tramo_A + largo_tramo_B + largo_tramo_C
+costo_ultima_cita = tarifa_tramo_C
+      citas_en_tramo_C = nro_cita - (largo_tramo_A + largo_tramo_B)
+    si no
+citas_en_tramo_C = largo_tramo_C
+costo_ultima_cita = tarifa_tramo_D
+      citas_en_tramo_D = nro_cita - (largo_tramo_A + largo_tramo_B + largo_tramo_C)
+    fin si
+  fin si
+fin si
+
+costo_total = 
+   (citas_en_tramo_A * tarifa_tramo_A)
+  + (citas_en_tramo_B * tarifa_tramo_B)
+  + (citas_en_tramo_C * tarifa_tramo_C)
+  + (citas_en_tramo_D * tarifa_tramo_D)
+
+escribir "El costo de la cita actual es: $" + costo_ultima_cita
+escribir "El costo total hasta ahora es: $" + costo_total
+
+
+
+Ejercicio
+Fabricas "el comerta" produce artículos con claves (1, 2, 3, 4, 5,y  6). Se requiere un algoritmo para calculas los precios de venta, para esto hay que consdierar lo sgte: costo de producción= materia prima+ mano de obra+ gastos de fabricación. Precio de venta= costo de producción +45% de costo de producción. El costo de mano de obra se obtiene de la sgte forma: para los productos con clave 3 o 4 se carga 75% del costo de la materia prima; para los que tiene clave 1 y 5 se carga 80%, y para los que tiene clave 2 o 6, 85%.
+Para calcular el gasto de fabricación se considera que si el articulo que se va a producir tiene claves 2 o 5, este gasto representa el 30% sobre el costo de la materia prima; si las claves son 3 o 6, representa un 35%; si las claves son 1 o 4, representa el 28%. La materia prima tiene el ciclo para en pseint
+
+Para i <- 1 Hasta 10 Con Paso 1 Hacer
+mi_tabla[i] <- i*10;
+Fin Para
+
+Fr
+Francisco Monroy Herrera
+10:32
+Algoritmo sin_titulo
+definir suma Como Entero
+definir num como entero
+definir i como entero
+
+suma=0
+Para i=1 Hasta 10 Con Paso paso Hacer
+escribir "ingrese un numero "
+leer num
+suma=suma+num
+i=i+1
+Fin Para
+
+escribir "resultado : ",suma
+FinAlgoritmomismo costo para cualquier clave. Realizar pseudocidog y diagrama de flujo.
+
+
+_______________________________________________________
+Algoritmo edad_alumnos
+Imprimir "ingrese la cantidad de alumnos"
+Leer cantidad_alumnos
+Para i <- 1 Hasta cantidad_alumnos Con Paso 1 Hacer
+Imprimir "ingrese nota del alumno"
+Leer notaAlumno
+sumanotas=sumanotas+notaAlumno
+Fin Para
+promedionotas=sumanotas/cantidad_alumnos
+Imprimir "el promedio de los alumnos es de " promedionotas
+FinAlgoritmo
+
+psnet
+
+Algoritmo sin_titulo
+a <- 0
+suma <- 0
+nalu <- 0
+Escribir 'Ingrese cantidad de alumnos: '
+Leer nalu
+Escribir 'Ingrese edades: '
+Para i<-1 Hasta nalu Hacer
+Leer a
+suma <- suma+a
+a <- 0
+FinPara
+Escribir 'Promedio de edad: ',suma/nalu
+FinAlgoritmo
+
+_________________________________________________________
+
+Algoritmo Ahorro_anual
+Definir sueldo,ahorro Como Real
+Escribir 'Ingresa tu sueldo'
+Leer sueldo
+ahorro <- ((sueldo*.15)*4)*12
+Escribir 'Tu ahorro semanal es: $',sueldo*.15
+Escribir 'Tu ahorro mensual es: $',(sueldo*.15)*4
+Escribir 'EL sueldo en un año es: $',ahorro
+FinAlgoritmo
+
+Ya
+---------------------------------------------------------------
+Algoritmo ahorro_anual
+
+Para i <- 1 Hasta 12 Con Paso 1 Hacer
+Imprimir "ahorro mensual"
+Leer ahorroactual
+ahorrototal=ahorrototal+ahorroactual
+Imprimir "hasta este mes lleva ahorrados $" ahorrototal
+Fin Para
+Imprimir "el ahorro de todo el año es de " ahorrototal
+FinAlgoritmo
+
+Algoritmo zero_over_zero
+Imprimir "ingrese cantidad de valores"
+Leer cantidad_de_valores
+Para i <- 1 Hasta cantidad_de_valores Con Paso 1 Hacer
+Imprimir "ingrese valor"
+Leer valorActual
+si(valorActual<=0)
+variableszero=variableszero+1
+SiNo
+variablesOverZero=variablesOverZero+1
+FinSi
+
+Fin Para
+Imprimir "las cifras sobre cero son " variablesOverZero "y las cifras menores o igual a cero son " variableszero
+
+FinAlgoritmo
+
+
+____________________________________________________________
+Algoritmo registro_horas
+Definir x, horas Como Entero
+Definir pago, total como real
+Escribir "Ingresa el pago por hora"
+leer pago
+x = 1
+total = 0
+Mientras x <= 6 Hacer
+Escribir "Ingresa las horas del dia ",x
+leer horas
+total = total + horas
+sueldo = sueldo + (horas * pago)
+x = x + 1
+FinMientras
+Escribir "El sueldo total por ",total," es: $",sueldo
+FinAlgoritmo
+
+
