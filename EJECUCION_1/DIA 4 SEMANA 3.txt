@@ -1,0 +1,162 @@
+Desarrolar en Java segun pseudocodigo el sgte ejercicio
+
+"La langosta ahumada- es una empresa dedicada a ofrecer banquetes; sus tarifas son las siguientes: el costo de platillo por persona es de $ 9.500.-, pero si el número de personas es mayor de 200 pero menor o igual a 300, el costo es de $8.500
+Para más de 300 personas el costo por platillo es de $ 7
+500.- Se requiere un algoritmo que ayude a determinar el prepsupuesto que se debe presentar a los clientes que deseen realizar un evento. Mediante pseudocodigo y diagrama de flujo.
+
+
+alumnos
+EJEMPLO DE YAYSON
+import java.util.Scanner;
+
+/*
+* To change this license header, choose License Headers in Project Properties.
+* To change this template file, choose Tools | Templates
+* and open the template in the editor.
+*/
+
+/**
+*
+* @author Madeus
+*/
+public class switchcase {
+
+/**
+* @param args the command line arguments
+*/
+public static void main(String[] args) {
+// TODO code application logic here
+System.out.println("ingrese cantidad de alumnos");
+System.out.println("ingrese una nota");
+Scanner lector=new Scanner(System.in);
+int cantidadAlumnos=lector.nextInt();
+int rango=0,costoTotal=0,costoPorAlumno=0;
+if(cantidadAlumnos>100){rango=1;}
+if(cantidadAlumnos>50&&cantidadAlumnos<99){rango=2;}
+if(cantidadAlumnos>30&&cantidadAlumnos<49){rango=3;}
+if(cantidadAlumnos<30){rango=0;}
+
+switch (rango){
+case 1 :
+costoPorAlumno=6500;
+costoTotal=cantidadAlumnos*costoPorAlumno;
+break;
+case 2 :
+costoPorAlumno=7000;
+costoTotal=cantidadAlumnos*costoPorAlumno;
+break;
+case 3 :
+costoPorAlumno=9500;
+costoTotal=cantidadAlumnos*costoPorAlumno;
+break;
+default:
+costoPorAlumno=400000/cantidadAlumnos;
+costoTotal=400000;
+break;
+}
+System.out.println("el costo por alumno es " + costoPorAlumno);
+System.out.println("el costo por total es " + costoTotal);
+}
+
+}
+
+
+
+
+
+
+
+_______________________________________________________________
+EJERCICIOS
+La politica de la compañia telefónica "chismefon" es : 2cHISMEA +X-. Cuando se realiza una llamada, el cobro es por el tiempo que ésta dura, de tal forma que los primeros cinco minutos cuestan $ 100.- c7u, los siguientes tres, $ 80.- c/u, los siguientes dos minutos, además se carga un impuesto de 3% cuando es domingo, y si es día hábil , en turno matutino 15%, y en turno vespertino, 10%. Realice un algoritmo par determinar cúanto debe pagar por cada concepto una persona que realiza una llamadfa.
+Represéntelo en diagrama dde flujo y pseudocódigo
+
+
+import java.util.Scanner;
+
+/*
+* To change this license header, choose License Headers in Project Properties.
+* To change this template file, choose Tools | Templates
+* and open the template in the editor.
+*/
+
+/**
+*
+* @author Madeus
+*/
+public class chismephone {
+
+/**
+* @param args the command line arguments
+*/
+public static void main(String[] args) {
+// TODO code application logic here
+System.out.println("ingrese cantidad de minutos hablados");
+Scanner lector=new Scanner(System.in);
+int cantidadMin=lector.nextInt();
+float valorFinal,costoMinutos=0F;
+if(cantidadMin<=5){costoMinutos=cantidadMin*100;}
+if(cantidadMin>5&&cantidadMin<=8){costoMinutos=((cantidadMin-5)*80)+500;}
+if(cantidadMin>8&&cantidadMin<=10){costoMinutos=((cantidadMin-8)*70)+740;}
+if(cantidadMin>10){costoMinutos=((cantidadMin-10)*50)+880;}
+System.out.println("ingrese el dia de la semana en el que se realizo la llamada");
+String dia=lector.next();
+
+if(dia=="Domingo"){
+valorFinal=costoMinutos*1.03F;
+}
+if(dia=="Sabado"){
+valorFinal=costoMinutos;
+}else{
+System.out.println("¿La llamada fue en horario diurno o vespertino?");
+String horario=lector.next();
+if(horario=="diurno"){
+valorFinal=costoMinutos*1.15F;
+}else{
+valorFinal=costoMinutos*1.10F;
+}
+}
+System.out.println("el costo de la llamada es " + valorFinal);
+}
+}
+
+*********************************************************+*****
+package td2021_05_13_ejercicios;
+
+import java.util.Scanner;
+
+/*
+Calcular promedio de notas ingresadas por teclado.
+ */
+
+public class Promedio
+{
+	public static void main(String[] args)
+	{
+		double suma = 0;
+		int contador = 0;
+		double nota;
+		double promedio;
+		
+		Scanner leer = new Scanner(System.in);
+		
+		do
+		{
+			System.out.print("Ingrese nota (o valor menor que 1 para terminar): ");
+			nota = Double.parseDouble(leer.nextLine());
+			
+			if (nota >= 1)
+			{
+				++contador;
+				suma += nota;
+			}
+			
+		} while (nota >= 1);
+		
+		promedio = suma / contador;
+		
+		System.out.println("El promedio es: " + promedio);
+	}
+}
+
+****************************************************************
