@@ -1,0 +1,306 @@
+JERCICIO 5
+
+El director de una escuela está organizando un viaje de estudio, y requiere determinar cúanto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente : si son 100 alumnos o más, el costo por cada alumno es de $ 6.500.-; de 50 a 99 alumnos, el costo es de $ 7.000,.-, de 30 a 49, de $ 9.500,-, y si son menos de 30, el costo de la renta del autobús es de $ 400.000., sin importar el número de alumnos.
+Realice un algoritmo que permita dterminar el pago de la compañia de autobuses y lo que debe pagar cada alumno por el viaje represente en pseudocodigo y diagrama de flujo.
+
+Algoritmo viaje_estudio
+Definir total como real
+Definir n como entero
+Escribir "Ingresa el número de alumnos"
+Leer n
+Si n >= 100 Entonces
+total = n * 65
+
+SiNo
+Si n >= 50 Entonces
+total = n * 70
+
+SiNo
+Si n >= 30 Entonces
+
+total = n * 95
+SiNo
+total = 4000
+
+FinSi
+
+FinSi
+
+FinSi
+
+Escribir "El total a pagar por alumno es: $", total / n
+
+Escribir "El total a pagar por la renta del autobús es: $",total
+
+***************************************************************
+
+maximo_estudiantes_tarifa_A = 29
+maximo_estudiantes_tarifa_B = 49
+maximo_estudiantes_tarifa_C = 99
+
+tarifa_A_fija = 400000
+tarifa_B_por_persona = 9500
+tarifa_C_por_persona = 7000
+tarifa_D_por_persona = 6500
+
+escribir "Ingrese cantidad de estudiantes: "
+leer estudiantes
+
+si estudiantes <= maximo_estudiantes_tarifa_A
+costo = tarifa_A_fija
+si no
+si estudiantes <= maximo_estudiantes_tarifa_B
+costo = estudiantes * tarifa_B_por_persona
+si no
+si estudiantes <= maximo_estudiantes_tarifa_C
+costo = estudiantes * tarifa_C_por_persona
+si no
+costo = estudiantes * tarifa_D_por_persona
+fin si
+fin si
+fin si
+
+inicio
+Imprimir "ingrese nro de alumnos"
+leer totalAlumnos
+Segun (totalAlumnos)
+totalAlumnos>=100 Hacer: costoFinal=totalAlumnos*6500
+totalAlumnos>=50&totalAlumnos<=99 Hacer: costoFinal=totalAlumnos*7000
+totalAlumnos>=30&totalAlumnos<=49 Hacer: costoFinal=totalAlumnos*7000
+totalAlumnos<=30 Hacer: costoFinal=400000
+fin Segun
+Imprimir "el costo final es" costoFinal
+valorPorAlumno=costoFinal=totalAlumnos
+Imprimir "Cada Alumno debe pagar" valorPorAlumno
+fin
+
+Ejemplo de resolución de Yayson, sobre el ejercicio paseo de curso
+inicio
+Imprimir "ingrese nro de alumnos"
+leer totalAlumnos
+Segun (totalAlumnos)
+totalAlumnos>=100 Hacer: costoFinal=totalAlumnos*6500
+totalAlumnos>=50&totalAlumnos<=99 Hacer: costoFinal=totalAlumnos*7000
+totalAlumnos>=30&totalAlumnos<=49 Hacer: costoFinal=totalAlumnos*7000
+totalAlumnos<=30 Hacer: costoFinal=400000
+fin Segun
+Imprimir "el costo final es" costoFinal
+valorPorAlumno=costoFinal=totalAlumnos
+Imprimir "Cada Alumno debe pagar" valorPorAlumno
+fin
+
+
+maximo_estudiantes_tarifa_A = 29
+maximo_estudiantes_tarifa_B = 49
+maximo_estudiantes_tarifa_C = 99
+
+tarifa_A_fija = 400000
+tarifa_B_por_persona = 9500
+tarifa_C_por_persona = 7000
+tarifa_D_por_persona = 6500
+
+escribir "Ingrese cantidad de estudiantes: "
+leer estudiantes
+
+si estudiantes <= maximo_estudiantes_tarifa_A
+costo = tarifa_A_fija
+si no
+si estudiantes <= maximo_estudiantes_tarifa_B
+costo = estudiantes * tarifa_B_por_persona
+si no
+si estudiantes <= maximo_estudiantes_tarifa_C
+costo = estudiantes * tarifa_C_por_persona
+si no
+costo = estudiantes * tarifa_D_por_persona
+fin si
+fin si
+fin si
+
+
+- Corrección ejercicios clase anterior
+
+Ejemplo de resolución de Yayson, sobre el ejercicio paseo de curso
+inicio
+Imprimir "ingrese nro de alumnos"
+leer totalAlumnos
+Segun (totalAlumnos)
+totalAlumnos>=100 Hacer: costoFinal=totalAlumnos*6500
+totalAlumnos>=50&totalAlumnos<=99 Hacer: costoFinal=totalAlumnos*7000
+totalAlumnos>=30&totalAlumnos<=49 Hacer: costoFinal=totalAlumnos*7000
+totalAlumnos<=30 Hacer: costoFinal=400000
+fin Segun
+Imprimir "el costo final es" costoFinal
+valorPorAlumno=costoFinal=totalAlumnos
+Imprimir "Cada Alumno debe pagar" valorPorAlumno
+fin
+________________________________________________________________
+
+Ejercicio 1: La Politica de la compañia telefonica "chismefone" es: "chismea+x-". Cuando se realiza una llamada el cobro es po tiempo que ésta dura, de tal forma que los primeros cinco minutos cuestan $ 100.-, los sigueintes tres, $80.-, los siguientes dos minutos, $70.c/u, y a partir del décimo minuto , $50.- c/u.
+Además, se carga un impuesto de 3% cuando es domingo, y si es día hábil, en turno matutino, 15%, y en turno vespertino, 10% Realice un algoritmo para determinar cúanto , debe pagar porn cada concepto una persona que realiza una llamada.
+Representalo en diagrama de flujo y pseudocodigo
+
+
+Algoritmo chismaphone
+Imprimir "ingrese duracion de llamada"
+Leer duracionLLamada
+Segun (duracionLLamada)
+duracionLLamada <= 5| duracionLLamada == 5 hacer:
+costoFinal=duracionLLamada*100
+duracionLLamada>5&duracionLLamada<=8 hacer:
+costoFinal=((duracionLLamada-5)*80)+500
+duracionLLamada>8&duracionLLamada<=10 hacer:
+costoFinal=((duracionLLamada-8)*70)+740
+duracionLLamada<10 hacer:
+costoFinal=((duracionLLamada-10)*50)+880
+FinSegun
+imprimir "ingrese fecha y hora de la llamada"
+leer fechayhora
+si(fechayhora=="domingo")
+costoFinal=costoFinal*1.03
+fin si
+si(fechayhora=="diahabil"&fechayhora=="turnoMatutino")
+costoFinal=costoFinal*1.15
+fin si
+si(fechayhora=="diahabil"&fechayhora=="turnoMatutino")
+costoFinal=costoFinal*1.1
+fin si
+Imprimir "el costo final de la llamada es" costoFinal
+
+FinAlgoritmo
+
+_________________________________________________________________
+
+Ejercicio 2: Una compañia de viajes cuenta con tres tipos de autobuses (A, b, Y c), cada uno tiene un precop por kilómetro recorrido por persona, los costo respectivos son $200, $ 250 y $300.
+Se requiere determinar el costo total y por persona del viaje considerando que cuando éste se presupuesta debe haber un mínimo de 20 personas, de lo contrario el cobro se realiza con base en este número límite. Realizar un algoritmo en pseudocidgo yy su digrama de flujo.
+
+ignacio
+
+Algoritmo ViajeBus
+leer tipoAutobus
+leer cantidadPasajeros
+Leer costoTotal
+
+si cantidadPasajeros>20
+Segun tipoAutobus hacer
+autobus igual "A":
+costoTotal = cantidadPasajeros *200
+
+autobus igual "B":
+costoTotal = cantidadPasajeros *250
+
+autobus igual "C":
+costoTotal = cantidadPasajeros *300
+
+FinSegun
+SiNo
+Segun tipoAutobus hacer
+autobus igual "A":
+costoTotal = 20 *200
+
+autobus igual "B":
+costoTotal = 20 *250
+
+autobus igual "C":
+costoTotal = 20 *300
+
+FinSegun
+
+
+FinSi
+Imprimir "El costo es: " costoTotal
+
+yayson
+
+Algoritmo Buses
+Imprimir "ingrese total de autobuses"
+Leer totalAutobuses
+Para i=1 Hasta totalAutobuses Con Paso 1
+Imprimir "Seleccione tipo autobus(a, b,c)"
+Leer tipoAutobus
+Imprimir "ingrese Total Personas"
+Leer totalPersonas
+Imprimir "ingrese total km"
+Leer Kms
+Segun (tipoAutobus)
+tipoAutobus=="A" Hacer:
+valorPorPersona=200*Kms
+Imprimir "el valor por persona es " valorPorPersona
+si(totalPersonas<=20)
+
+valorbus=(20*200)*Kms
+
+SiNo
+valorbus=(totalPersonas*200)*Kms
+FinSi
+Imprimir "el valor de este trayecto es" valorbus
+tipoAutobus=="B" Hacer:
+valorPorPersona=250*Kms
+Imprimir "el valor por persona es " valorPorPersona
+si(totalPersonas<=20)
+valorbus=(20*250)*Kms
+SiNo
+valorbus=(totalPersonas*250)*Kms
+FinSi
+Imprimir "el valor de este trayecto es" valorbus
+tipoAutobus=="C" Hacer:
+valorPorPersona=300*Kms
+Imprimir "el valor por persona es " valorPorPersona
+si(totalPersonas<=20)
+valorbus=(20*300)*Kms
+SiNo
+valorbus=(totalPersonas*300)*Kms
+FinSi
+Imprimir "el valor de este trayecto es" valorbus
+FinSegun
+totalValor=totalValor+valorbus
+FinPara
+Imprimir "el valor final es " totalValor
+FinAlgoritmo
+
+________________________________________________________________
+
+Ejercicio 3
+"El naufrago satisfecho" ofrece hamburguesas sencilla,dobles y triples, las cuales tienen un costo de $2000, $ 2500, $ 2800.- Respectivamente. La empresa acepta tarjetas de crédito con un cargo de 5% sobre la compra. Suponiendo que los clientes adquieren sólo un tipo de hamburguesa, realice un algotirmo para determinar cúanto debe pagar una persona por N hamburguesas. Representelo mediante digrama de flujo y pseudocodigo.
+
+Algoritmo sin_titulo
+Definir n,tarjeta,hamburguesa como entero
+Definir total Como Real
+Escribir Sin Saltar "Cuantas hamburguesas desea comprar"
+leer n
+para x = 1 hasta n hacer
+Escribir "Seleccione el numero del tipo de hamburguesa: ";
+Escribir " 1.- S sencilla $ 200"
+Escribir " 2.- D doble $250"
+Escribir " 3.- T triples $280"
+leer hamburguesa
+Segun hamburguesa Hacer
+
+1:
+total = total + 20
+2:
+total = total + 25
+3:
+total = total + 28
+De Otro Modo:
+Escribir "Ese numero no existe en el menu"
+fin segun
+Fin para
+Escribir "Elige el tipo de pago:"
+Escribir " 1.- Efectivo"
+Escribir " 2.- Tarjeta de credito o debito"
+leer tarjeta
+Segun tarjeta Hacer
+1:
+Escribir "El total a pagar es de: ",total," pesos"
+2:
+total = total + (total * .05)
+Escribir "El total a pagar es de: ",total," pesos"
+
+De Otro Modo:
+
+Escribir "Elige un numero correcto"
+
+Fin Segun
+
+FinProceso
+
