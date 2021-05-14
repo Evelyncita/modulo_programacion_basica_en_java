@@ -1,0 +1,112 @@
+eJERCICIOS
+Realizar algoritmo es pseudocidgo que resuelva los siguienteds problemas utilizando una de las estructuras iterativas que hemos visto (mientras - hacer mientras - para):
+Calculñar la multiplicacion de N numeros ingresados por un usuario que sean n umeros primos. (la cantidad debe ser ingresada por el mismo usuario)
+
+RESOLUCION SEGUN Jonathan
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+int n=100; // Cuenta
+int x=9; // Múltiplo
+int i; // Contador
+
+
+
+for (i=1; i <=n; i++) {
+
+if (i % x == 0)
+System.out.println(i);
+
+}
+
+// TODO code application logic here
+}
+
+}
+
+____________________________________________________________
+Determinar la cantidad de números múltiplos de X que fueron ingresados (la cantidad de números que se ingresan debe ser determinada por el usuario).
+
+package P_11;
+import java.util.Scanner;
+public class NumPrimos {
+public static void main(String args[]){
+
+int num, i, suma = 0;
+Scanner iN = new Scanner(System.in);
+
+System.out.println("Multiplo Primo ciclo For");
+
+System.out.println("Ingrese numero mayor a 0; ");
+num = iN.nextInt();
+
+for(i = 2; i < num; i++){
+if (num % i == 0){
+suma=suma+i;
+System.out.println(i);
+}
+}
+System.out.println("La suma es: " + suma);
+
+
+Realizar algoritmoen pseudocidgo que resuelva los siguientes problemas utilizando una de las tres estructuras iterativas (mientras - hacer mientras - para): 
+Determinar la cantidad de números multiplos de 5 que fueron ingresados ( la cantidad de números que se ingresan deben ser determiada por el usuario).
+
+
+
+}import java.util.Scanner;
+public class multiplosN_20210514 {
+
+/**
+* @param args the command line arguments
+*/
+public static void main(String[] args) {
+// TODO code application logic here
+int num;
+int multiplo;
+int suma=0;
+int i;
+int lim;
+Scanner leer=new Scanner(System.in);
+System.out.println("ingrese la cantidad de numeros: ");
+lim=leer.nextInt();
+System.out.println("ingrese multiplo : ");
+multiplo=leer.nextInt();
+
+for (i=1;i<=lim;i++){
+System.out.println("ingrese numero : ");
+num=leer.nextInt();
+if (num%multiplo==0){suma=suma+1;}
+
+}
+System.out.println("cantidad de numeros ingresados que son multiplos de "+multiplo+ " es "+suma);
+
+}
+}
+
+__________________________________________________________________________________
+
+Sumar los números pares e impares ingresados por un usuario y contar con la cantidad de números pares e impares y determinar que números (si los pares o impares) fueron los que más se ingresaron (la cantidad de números que se ingresan deben ser determinada por el usuario).
+
+public static void main(String[] args) {
+Scanner reader = new Scanner(System.in);
+int numero = 0;
+numero = reader.nextInt();
+List lista = new ArrayList();
+Scanner reader = new Scanner(System.in);
+int numero = 0;
+
+System.out.println("Introduce números. El cero para salir");
+
+do {
+numero = reader.nextInt();
+lista.add(numero);
+} while (numero!=0);
+
+// TODO code application logic here
+}
+
+}
+
+
+
