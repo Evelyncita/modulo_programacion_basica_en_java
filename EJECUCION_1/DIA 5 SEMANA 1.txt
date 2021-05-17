@@ -129,3 +129,12 @@ CODIGO BARRA EMITIDO POR EL SII
 
 
 SALIDA: EMISION BOLETA 
+
+
+
+
+REFLEXION PERSONAL 
+
+Se trabaja con los inicios de algoritmo, para poder aplicar con las bases de programacion luego en java
+
+

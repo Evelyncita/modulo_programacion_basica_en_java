@@ -1,3 +1,5 @@
+El dia de hoy realizamos ejercicios en pseudocodigo ingresando y dejando registrado en java con su nombre respectivo. a traves de notas iterativas
+
 Desarrolar en Java segun pseudocodigo el sgte ejercicio
 
 "La langosta ahumada- es una empresa dedicada a ofrecer banquetes; sus tarifas son las siguientes: el costo de platillo por persona es de $ 9.500.-, pero si el número de personas es mayor de 200 pero menor o igual a 300, el costo es de $8.500
@@ -160,3 +162,8 @@ public class Promedio
 }
 
 ****************************************************************
+
+REFLEXION DIARIA
+
+Se realizan mas ejercicios a traves de java en metbeans, de los cuales se ingresan a traves de notas iterativas, las cuales pueden ser If - Else, Switch
+dependiendo de cada iteracion o ejecucion que se solicita a traves de cada ejercicio

@@ -51,4 +51,5 @@ leer (x,z)
 escribir "el primer numero ingresado es ", N1, " y el segundo numero ingresado es" N2
  
  
-
+REFLEXION DIARIA
+Realizamos trabajos en grupo sobre algoritmos aportando ideas y nuevas sugerencias para realizar algoritmos.

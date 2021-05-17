@@ -175,3 +175,7 @@ b=a-b
 a=a-b
 a
 b
+
+
+REFLEXION DIARIA
+Se realizan trabajo grupal para poder participar y aportando ideas y nuevos metodos para poder generar algoritmos.

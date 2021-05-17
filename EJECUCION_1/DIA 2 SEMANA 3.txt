@@ -1,3 +1,13 @@
+Realizamos ejercicios en pseudocodigo e ingresandolos en netbeans con su nombre registrado para dar valor a cada valor y registrando y practicando con los ejercicios
+
+Comenzamos a practicar sobre ciclos iterativos en java.
+Ejercicios 1
+El consultorio del Dr. Lorenzo Mata Lozano tiene como politica cobrar la consulta con base en el número de cita, de la siguiente forma:
+Las primeras 3 citas  a $ 200.000 c/u
+Las siguientes 2 citas $ 150.000 c/u
+Las 3 siguientes citas a $ 100.000 c/u
+Las restantes a $ 50.000 c/u
+
 eJEMPLO cAROLINA cLARET
 Algoritmo sin_titulo
 escribir"ingrese numero de cita"
@@ -122,6 +132,7 @@ costo_total =
 escribir "El costo de la cita actual es: $" + costo_ultima_cita
 escribir "El costo total hasta ahora es: $" + costo_total
 
+*****************************************************************
 
 
 Ejercicio
@@ -153,6 +164,8 @@ FinAlgoritmomismo costo para cualquier clave. Realizar pseudocidog y diagrama de
 
 
 _______________________________________________________
+Ejercicios
+
 Algoritmo edad_alumnos
 Imprimir "ingrese la cantidad de alumnos"
 Leer cantidad_alumnos
@@ -244,3 +257,6 @@ Escribir "El sueldo total por ",total," es: $",sueldo
 FinAlgoritmo
 
 
+REFLEXION PERSONAL
+
+Se realiza ejecicios en java a traves de netbeans con ciclo iteratviso, ingresando como ejemplos de mis compañeros en digarmas de flujo y luego a java a traves de la carpeta creada, cada vez se va aprendiendo mas sobre java de a poco, cuesta un poco con los ejercicios aunque practique.

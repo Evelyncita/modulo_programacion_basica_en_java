@@ -1,0 +1,14 @@
+Hoy realizamos resumen de ejercicios ya realizando comprobando y comparando nuestros resultados
+
+Profesor nos explica como poder usar beans
+y aprender a dar valores a nuestros variables
+
+una clase es un molde que me permite crear objetos
+
+Ejercicio: Utilizando los ciclos iterativos, crear un programa que permita el mayor de N números ingresados por el usuario 
+
+
+
+
+RELEXION PERSONAL
+Debo practicar mas sobre los ejercicios entregados por el profesor ya que cada vez son mas dificiles de codificar y no debo atrasarme para poder entender de mejor forma cada aprendizaje aprendido.

@@ -1,3 +1,4 @@
+Hoy realizamos variados ejercicios de algoritmos en pseudocodigo
     1. Determinar si la suma de dos números ingresados es positiva, negativa o cero.
 
 inicio
@@ -118,3 +119,7 @@ SI NO, print: "c es el mayor de los tres números"
 FIN SI
 FIN SI
 FIN 
+
+
+REFLEXION DIARIAS
+Se realizan algoritmos en forma personal en pseudocidgo, comparando con mis compañeros y gurdando ejemplo para luego comprar mis resultados

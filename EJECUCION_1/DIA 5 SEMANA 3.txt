@@ -1,4 +1,6 @@
-eJERCICIOS
+El dia de hoy se continuo realizando ejercicios de algoritmo en pseudocidgo y aprendiendo mas sobre notas iterativas aplicando los If - Else, Switch
+
+EJERCICIOS
 Realizar algoritmo es pseudocidgo que resuelva los siguienteds problemas utilizando una de las estructuras iterativas que hemos visto (mientras - hacer mientras - para):
 Calculñar la multiplicacion de N numeros ingresados por un usuario que sean n umeros primos. (la cantidad debe ser ingresada por el mismo usuario)
 
@@ -108,5 +110,10 @@ lista.add(numero);
 
 }
 
+
+
+REFLEXION PERSONAL
+
+Se realiza mas ejerrcicios en java sobre pseudocidgo y condiciones iterativas If - Else, Switch y se quedan ejercio para realizar, cada vez se complica mas pero con ejercicios cuesta menos aunque debo practicar mas
 
 

@@ -1,3 +1,4 @@
+Hoy continuamos realizando ejercicios de algoritmos
 
 Realizar algoritmo en pseudocodigo que resuelva los siguientes problemas utilizando las 3 estructuras iterativas que hemos visto (mientras - hacer mientras -para):
 
@@ -252,3 +253,8 @@ Print: "se ingresaron mas números par"
 SI NO, Cuenta_impar
 Print: "se ingresaron mas números impar"
 FIN
+
+
+REFLEXION DIARIA
+Continuamos realizando ejercicios en grupo y de forma personal para mostrar diferentes formas de poder crearlos llenado a un mismo fin o solucion.
+Cada vez se van ingresando mas condiciones de algoritmo a medida del paso de los dias de aprendizaje
